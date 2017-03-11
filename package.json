@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "1ª instalacion de node;",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bosskraken/nodeJs.git"
+  },
+  "keywords": [
+    "nodeJS",
+    "proyect",
+    "P_0.1"
+  ],
+  "author": "santiago ojeda, javier couce, miguel blanca",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bosskraken/nodeJs/issues"
+  },
+  "homepage": "https://github.com/bosskraken/nodeJs#readme"
+}
