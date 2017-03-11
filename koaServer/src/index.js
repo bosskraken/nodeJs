@@ -9,4 +9,8 @@ app.listen(3000, function(err) {
         process.exit(1);
     }
     console.log('Koa server listening in port 3000');
+
 });
+app.use(async (ctx, next) => {
+console.log(`The request url is ${ctx.url}`);
+ctx.body = 'My first middleware'; });
