@@ -7,13 +7,14 @@ app.use(async(ctx, next) => {
     const start = Date.now();
     await next();
     const time = Date.now() - start;
-    //set the header ctx.set('X-Response-Time', `${time} ms`);
+    //ctx.set('X-Response-Time', `${time} ms`);
 });
 app.use(async(ctx, next) => {
+    var d = new Date();
+    horas = d.getHours();
+    minutos = d.getMinutes();
     console.log(`The request url is ${ctx.url}`);
-    ctx.body = {
-        ok: 1
-    };
+    ctx.body = 'son las ' + horas + ' horas y ' + minutos;
 });
 app.listen(3000, function(err) {
     if (err) {
